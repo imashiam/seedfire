@@ -19,7 +19,7 @@ local function run(msg, matches)
 		return "For owner only !"
 	end
 	if matches[2] then
-		chat_info(receiver, tagall, {receiver = receiver,msg_text = matches[1]})
+		chat_info(receiver,tagall, {receiver = receiver,msg_text = matches[1]})
 	end
 end
 	return
@@ -32,7 +32,7 @@ return {
     "tagall: Tag All Users And Show Your Message.",
   },
   patterns = {
-    "^(tagall) +(.+)$"
+    "^([Tt]agall) +(.+)$"
   },
   run = run
 }
